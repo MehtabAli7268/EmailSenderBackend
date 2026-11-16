@@ -1,0 +1,3 @@
+# Block direct web access to everything in this folder (config, .env, vendor...).
+# Only api/send-mail.php is re-enabled by api/.htaccess.
+Require all denied

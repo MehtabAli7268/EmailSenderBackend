@@ -1,0 +1,7 @@
+# Only send-mail.php is public; everything else in api/ stays blocked.
+<IfModule mod_authz_core.c>
+    Require all denied
+    <Files "send-mail.php">
+        Require all granted
+    </Files>
+</IfModule>
